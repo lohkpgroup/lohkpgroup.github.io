@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>The Hersam Research Group :: Research</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/tango/skin.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<!--[if IE 6]>
+<script src="js/DD_belatedPNG.js"></script>
+<script>
+  /* EXAMPLE */
+  DD_belatedPNG.fix('body, img, div');
+  
+  /* string argument can be any CSS selector */
+  /* .png_bg example is unnecessary */
+  /* change it to what suits you! */
+</script>
+<![endif]-->
+<script type="text/javascript">
+function mycarousel_initCallback(carousel)
+{
+    // Disable autoscrolling if the user clicks the prev or next button.
+    carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+    });
+ 
+    carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+    });
+ 
+    // Pause autoscrolling if the user moves with the cursor over the clip.
+    carousel.clip.hover(function() {
+        carousel.stopAuto();
+    }, function() {
+        carousel.startAuto();
+    });
+};
+ 
+jQuery(document).ready(function() {
+    //jQuery('#mycarousel').jcarousel({
+    //    auto: 3,
+   //     wrap: 'last',
+    //    initCallback: mycarousel_initCallback
+   // });
+    
+    	 //select all the a tag with name equal to modal
+    $('a[name=modal]').click(function(e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        //Get the A tag
+        var id = $(this).attr('href');
+     
+     	var popMargTop = ($(id).height() + 60) / 2;
+    	var popMargLeft = ($(id).width() + 60) / 2;
+
+    	//Apply Margin to Popup
+    	$(id).css({
+        'margin-top' : -popMargTop,
+        'margin-left' : -popMargLeft
+    	});
+     	 //transition effect     
+        $('#mask').css('opacity','0').show();   
+        $('#mask').fadeTo(200,0.65,function(){$(id).fadeIn(200);}); 
+        
+     
+    });
+     
+    //if close button is clicked
+    $('.window .close').click(function (e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        $('#mask, .window').fadeOut(300);
+    });     
+     
+    //if mask is clicked
+    $('#mask').click(function () {
+        $(this).hide();
+        $('.window').hide();
+    }); 
+});
+
+
+ 
+</script>
+</head>
+<body>
+
+
+<!-- Copyright � 2008. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.1.2.1052</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  (Unregistered) on  04/29/13 5:09:27 PM.<br>
+<b>Address:</b> <a class="info" href="http://www.hersam-group.northwestern.edu/research.html">http://www.hersam-group.northwestern.edu/research.html</a><br>
+<b>Title:</b> The Hersam Research Group :: Research &nbsp;&bull;&nbsp; <b>Size:</b> 44814 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Thu, 11 Oct 2012 03:32:26 GMT<br></div>
+<!-- /Copyright � 2008. Spidersoft Ltd -->
+
+
+<div id="boxes">
+<div id="dialog21" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/21.jpg" style="float:left; height: 400px; padding: 0px 10px 10px"><b>Abstract:</b><br>
+Multiple vibrational modes have been observed for copper phthalocyanine (CuPc) adlayers on Ag(111) using ultrahigh vacuum (UHV) tip-enhanced Raman spectroscopy (TERS). Several important new experimental features are introduced in this work that significantly advance the state-of-the-art in UHV-TERS. These include (1) concurrent sub-nm molecular resolution STM imaging using Ag tips with laser illumination of the tip–sample junction, (2) laser focusing and Raman collection optics that are external to the UHV-STM that has two cryoshrouds for future low temperature experiments, and (3) all sample preparation steps are carried out in UHV to minimize contamination and maximize spatial resolution. Using this apparatus we have been able to demonstrate a TERS enhancement factor of 7.1 × 105. Further, density-functional theory calculations have been carried out that allow quantitative identification of eight different vibrational modes in the TER spectra. The combination of molecular-resolution UHV-STM imaging with the detailed chemical information content of UHV-TERS allows the interactions between large polyatomic molecular adsorbates and specific binding sites on solid surfaces to be probed with unprecedented spatial and spectroscopic resolution.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+N. Jiang, E. T. Foley, J. M. Klingsporn, M. D. Sonntag, N. A. Valley, J. A. Dieringer, T. Seideman, G. C. Schatz, M. C. Hersam, and R. P. Van Duyne, “Observation of multiple vibrational modes in ultrahigh vacuum tip-enhanced Raman spectroscopy combined with molecular-resolution scanning tunneling microscopy,” <i>Nano Letters</i>, <b>12</b>, 5061 (2012).</span>	</div>
+	<div id="dialog20" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/20.gif" style="float:left; height: 400px; padding: 0px 10px 10px"><b>Abstract:</b><br>
+With its exceptional charge transport properties, graphene has emerged as a potential replace- ment material in the electronics industry. For these applications, much effort has been devoted towards the synthesis of large defect-free graphene sheets. However, recent developments have enabled the efficient production of micrometer- and nanometer-sized graphene sheets in the solution phase. These suspensions have stimulated the
+development of novel materials and devices that more fully exploit the tunability and large specific surface area of pris- tine graphene. This review highlights advances in the under- standing of the defect structure and properties of as-produced graphene as well as strategies for its chemical selection and modification that facilitates its use in functional materials and devices.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+Y. T. Liang and M. C. Hersam, "Towards Rationally Designed Graphene-Based Materials and Devices," <i>Macromolecular Chemistry and Physics</i>, <b>213</b>, 1091 (2011). </span>	</div>
+	<div id="dialog19" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/19.gif" style="float:left; height: 400px; padding: 0px 10px 10px"><b>Abstract:</b><br>
+Scanning ion conductance microscopy imaging of battery electrodes, using the geometry shown in the figure, is a tool for in situ nanoscale mapping of surface topography and local ion current. Images of silicon and tin electrodes show that the combination of topography and ion current provides insight into the local electrochemical phenomena that govern the operation of lithium ion batteries.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+A. L. Lipson, R. S. Ginder, and M. C. Hersam, "Nanoscale In Situ Characterization of Li-ion Battery Electrochemistry Via Scanning Ion Conductance Microscopy," <i>Advanced Materials</i>, <b>23</b>, 5613 (2011). </span>	</div>
+	<div id="dialog18" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/18.gif" style="float:left; height: 400px; padding: 0px 10px 10px"><b>Abstract:</b><br>
+Single-walled carbon nanotubes (SWNTs) sorted by electronic type are employed as organic photovoltaic device anodes. Metal-enriched SWNT films yield device efficiencies that are fifty times greater than their semiconducting counterparts. Through sheet resistance, UV-vis-NIR optical absorbance, and X-ray photoelectron spectroscopy measurements, the OPV charge blocking layer PEDOT:PSS is found to reverse the original chemical doping of the SWNT films. The relative insensitivity of metallic SWNTs to chemical doping thus explains the improved performance of metal-enriched SWNT films as OPV anodes.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+T. P. Tyler, R. E. Brock, H. J. Karmel, T. J. Marks, and M. C. Hersam, "Electronically Monodisperse Single-Walled Carbon Nanotube Thin Films as Transparent Conducting Anodes in Organic Photovoltaic Devices," <i>Advanced Energy Materials</i>, <b>1</b>, 785 (2011). </span>
+	</div>
+	<div id="dialog1" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/1.jpg" style="float:left; height: 400px; padding: 0px 10px 10px"><b>Abstract:</b><br>
+We describe how iterative, orthogonal density gradient ultracentrifugation (DGU) separations can be used to produce nearly single-chirality (6,5) SWNTs. SWNT network transistors made from these highly pure, ≥98% semiconducting SWNTs simultaneously exhibit high on/off ratios, mobilities, and on-state conductances, suggesting their future application in integrated circuits and near-infrared optoelectronic light emitters and photodetectors.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+A. A. Green and M. C. Hersam, "Nearly single-chirality single-walled carbon nanotubes produced via orthogonal iterative density gradient ultracentrifugation," <i>Advanced Materials</i>, <b>23</b>, 2185 (2011).</span>
+	</div>
+	<div id="dialog2" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/2.jpg" style="float:left; height: 400px; padding: 0px 10px 10px"><span style="float:"><b>Abstract:</b><br>
+Nanostructured metal films have been widely studied for their roles in sensing, catalysis, and energy storage. In this work, the synthesis of compositionally controlled and nanostructured Pt/Ir films by atomic layer deposition (ALD) into porous anodized aluminum oxide templates is demonstrated. Templated ALD provides advantages over alternative synthesis techniques, including improved film uniformity and conformality as well as atomic-scale control over morphology and composition. Nanostructured Pt ALD films are demonstrated with morphological control provided by the Pt precursor exposure time and the number of ALD cycles. With these approaches, Pt films with enhanced surface areas, as characterized by roughness factors as large as 310, are reproducibly synthesized. Additionally, nanostructured PtIr alloy films of controlled composition and morphology are demonstrated by templated ALD, with compositions varying systematically from pure Pt to pure Ir. Lastly, the application of nanostructured Pt films to electrochemical sensing applications is demonstrated by the non-enzymatic sensing of glucose.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+D. J. Comstock, S. T. Christensen, J. W. Elam, M. J. Pellin, and M. C. Hersam, "Tuning the composition and nanostructure of Pt/Ir films via anodized aluminum oxide templated atomic layer deposition," <i>Adv. Funct. Mater.</i>, <b>20</b>, 3099 (2010).</span>
+	</div>
+	<div id="dialog3" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/3.jpg" style="float:left; height: 400px; padding: 0px 10px 10px"><b>Abstract:</b><br>
+Scanning tunneling microscopy (STM), atomic force microscopy (AFM), lateral force microscopy (LFM), and conductive AFM (cAFM) are employed to characterize epitaxial graphene on SiC(0001). Of particular interest are substrates that possess single-layer and bilayer graphene domains, which form during thermal decomposition of silicon from SiC(0001). Since these samples are often partially graphitized, characterization techniques are needed that can distinguish domains of epitaxial graphene from the adjacent (6√3×6√3)R30° reconstructed SiC(0001) surface. The relative merits of STM, AFM, LFM, and cAFM for this purpose are outlined, thus providing nanometer-scale strategies for identifying and characterizing epitaxial graphene.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+J. A. Kellar, J. M. P. Alaboson, Q. H. Wang, and M. C. Hersam, "Identifying and characterizing epitaxial graphene domains on partially graphitized SiC(0001) surfaces using scanning probe microscopy," <i>Appl. Phys. Lett.</i>, <b>96</b>, 143103 (2010).</span>
+	</div>
+	<div id="dialog4" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/4.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+With the recent burst of activity surrounding the solution-phase production of graphene, comparatively little progress has been made toward the generation of graphene dispersions with tailored thickness, lateral area, and shape. The polydispersity of graphene dispersions, however, can lead to unpredictable or nonideal behavior once they are incorporated into devices since the properties of graphene vary as a function of its structural parameters. In this brief perspective, we overview the problem of graphene polydispersity, the production of graphene dispersions, and the methods under development to produce dispersions of monodisperse graphene.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+A. A. Green and M. C. Hersam, "Emerging methods for producing monodisperse graphene solutions," <i>J. Phys. Chem. Lett.</i>, <b>1</b>, 544 (2010).</span></div>
+	<div id="dialog5" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/5.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Graphene, a two-dimensional sheet of carbon atoms, is a promising material for next-generation technology because of its advantageous electronic properties, such as extremely high carrier mobilities. However, chemical functionalization schemes are needed to integrate graphene with the diverse range of materials required for device applications. In this paper, we report self-assembled monolayers of the molecular semiconductor perylene-3,4,9,10-tetracarboxylic dianhydride (PTCDA) formed on epitaxial graphene grown on the SiC(0001) surface. The molecules possess long-range order with a herringbone arrangement, as shown by ultra-high vacuum scanning tunnelling microscopy at room temperature. The molecular ordering is unperturbed by defects in the epitaxial graphene or atomic steps in the underlying SiC surface. Scanning tunnelling spectra of the PTCDA monolayer show distinct features that are not observed on pristine graphene. The demonstration of robust, uniform organic functionalization of epitaxial graphene presents opportunities for graphene-based molecular electronics and sensors.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+Q. H. Wang and M. C. Hersam, "Room-temperature molecular-resolution characterization of self-assembled organic monolayers on epitaxial graphene," <i>Nature Chemistry</i> <b>1</b>, 206 (2009).</span></div>
+	<div id="dialog6" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/6.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+With an eye toward using surface morphology to enhance heterogeneous catalysis, Pt nanoparticles are grown by atomic layer deposition (ALD) on the surfaces of SrTiO3 nanocubes. The size, dispersion, and chemical state of the Pt nanoparticles are controlled by the number of ALD growth cycles. The SrTiO3 nanocubes average 60 nm on a side with {001} faces. The Pt loading increases linearly with Pt ALD cycles to a value of 1.1 × 10-6 g cm-2 after five cycles. Scanning electron microscopy images reveal discrete, well-dispersed Pt nanoparticles. Small- and wide-angle X-ray scattering show that the Pt nanoparticle spacing and size increase as the number of ALD cycles increases. X-ray absorption spectroscopy shows a progression from platinum(II) oxide to metallic platinum and a decrease in PtO bonding with an increase in PtPt bonding as the number of ALD cycles increases.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+S. T. Christensen, J. W. Elam, F. A. Rabuffetti, Q. Ma, S. J. Weigand, B. Lee, S. Seifert, P. C. Stair, K. R. Poeppelmeier, M. C. Hersam, and M. J. Bedzyk, "Controlled growth of platinum nanoparticles on strontium titanate nanocubes by atomic layer deposition," <i>Small</i> <b>5</b>, 750 (2009).</span></div>
+	<div id="dialog7" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/7.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Embedded, optically transparent, electrically conducting oxide nanowires, and other patterns are written on highly resistive transparent metal oxide thin films with nanoscale spatial control using focused ion beam implantation. The resulting transparent conducting oxide features are 110-160 nm wide, 7 nm deep, and are theoretically limitless in length, connectivity, and shape.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+N. E. Sosa, J. Liu, C. Chen, T. J. Marks, and M. C. Hersam, "Nanoscale writing of transparent conducting oxide features with a focused ion beam," <i>Advanced Materials</i> <b>21</b>, 721 (2009).</span>
+	</div>
+	<div id="dialog8" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/8.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Current methods of synthesizing single-walled carbon nanotubes (SWNTs) result in racemic mixtures that have impeded the study of left- and right-handed SWNTs. Here we present a method of isolating different SWNT enantiomers using density gradient ultracentrifugation. Enantiomer separation is enabled by the chiral surfactant sodium cholate, which discriminates between left- and right-handed SWNTs and thus induces subtle differences in their buoyant densities. This sorting strategy can be employed for simultaneous enrichment by handedness and roll-up vector of SWNTs having diameters ranging from 0.7 to 1.5 nm. In addition, circular dichroism of enantiomer refined samples enables identification of high-energy optical transitions in SWNTs.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+A. A. Green, M. C. Duch, and M. C. Hersam, "Isolation of single-walled carbon nanotube enantiomers by density differentiation," <i>Nano Research</i> <b>2</b>, 69 (2009).</span></div>
+	<div id="dialog9" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/9.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Carbon nanotubes consist of one or more concentric graphene cylinders and are under investigation for a variety of applications that make use of their excellent thermal, mechanical, electronic and optical properties. Double-wall nanotubes are ideal systems for studying the interwall interactions influencing the properties of nanotubes with two or more walls. However, current techniques to synthesize double-wall nanotubes produce unwanted single- and multiwall nanotubes. Here, we show how density gradient ultracentrifugation can be used to separate double-wall nanotubes from mixtures of single- and multiwall nanotubes through differences in their buoyant density. This technique results in samples that are highly enriched in either single- or double-wall nanotubes of similar outer wall diameter, with the double-wall nanotubes being, on average, 44% longer than the single-wall nanotubes. The longer average length of the double-wall nanotubes provides distinct advantages when they are used in transparent conductors.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+A. A. Green and M. C. Hersam, "Processing and properties of highly enriched double-wall carbon nanotubes," <i>Nature Nanotechnology</i> <b>4</b>, 64 (2009).</span></div>
+	<div id="dialog10" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/10.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+The hydrodynamic properties of surfactant encapsulated single-walled carbon nanotubes (SWNTs) have been characterized by optically measuring their spatial and temporal redistribution in situ in an analytical ultracentrifuge. The measured redistribution profiles are fit to the Lamm equation, thus determining the sedimentation, diffusion, and hydrodynamic frictional coefficients of the surfactant encapsulated SWNTs. For sodium cholate encapsulated SWNTs, we demonstrate that the technique of analytical ultracentrifugation can be utilized to determine the linear packing density of surfactant molecules along the length of the SWNTs, 3.6 ± 0.8 nm−1, and the anhydrous molar volume of the surfactant molecules on the SWNT surfaces, 270 ± 20 cm3 mol−1. Additionally, analytical ultracentrifugation is used to measure and compare the sedimentation rates of bundled and isolated carbon nanotubes. This study should serve as a guide for designing centrifuge-based processing procedures for preparing samples of SWNTs for a wide variety of applications and studies. Additionally, the results obtained here should aid in understanding the hydrodynamic properties of SWNTs and the interactions between SWNTs and surfactants in aqueous solution.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+M. S. Arnold, J. Suntivich, S. I. Stupp, and M. C. Hersam, "Hydrodynamic characterization of surfactant encapsulated carbon nanotubes using an analytical ultracentrifuge," <i>ACS Nano</i> <b>2</b>, 2291 (2008).</span>
+	</div>
+	<div id="dialog11" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/11.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Self-assembled Ga nanoclusters form a well-ordered array on the Si(111)-7 × 7 surface. Scanning tunneling microscopy and spectroscopy map the electronic structure of these arrays at the atomic scale. In the image, the local density of states is plotted as a color map over the topography and shows a continuous 2D network of increased differential tunneling conductance connecting the nanoclusters.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+Q. H. Wang and M. C. Hersam, "Atomically resolved charge redistribution for Ga nanocluster arrays on the Si(111)-7x7 surface," <i>Small</i> <b>4</b>, 915 (2008).</span></div>
+	<div id="dialog12" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/12.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Room-temperature ultra-high vacuum (UHV) scanning tunnelling microscopy (STM) has been employed to investigate free radical chemistry on the Si(111)-7 × 7 surface with atomic-scale spatial resolution. In particular, due to its single-site binding mechanism and extensive previous study on the Si(100)-2 × 1 surface, the nitroxyl free radical 2,2,6,6-tetramethyl-1-piperidinyloxy (TEMPO) was explored. UHV STM imaging of isolated molecules revealed that TEMPO covalently reacts with adatom dangling bonds with high affinity. By monitoring TEMPO adsorption as a function of surface coverage, TEMPO was also found to preferentially bind to centre adatom sites at the initial stages of adsorption. On the other hand, as the surface coverage increased, TEMPO molecules adsorbed to centre adatoms and corner adatoms approached a ratio of 1:1. At all surface coverage levels, TEMPO showed minimal preference for binding to either the faulted or unfaulted half of the unit cell. Consequently, upon saturation, the TEMPO adlayer exhibited long-range ordering and preserved the underlying 7 × 7 surface reconstruction. This study provides fundamental insight into free radical surface chemistry and suggests a direct pathway for forming nearly perfectly ordered organic adlayers on the Si(111)-7 × 7 surface.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+N. P. Guisinger, S. P. Elder, N. L. Yoder, and M. C. Hersam, "Ultra-high vacuum scanning tunneling microscopy investigation of free radical adsorption to the Si(111)-7x7 surface," <i>Nanotechnology</i> <b>18</b>, 044011 (2007).</span></div>
+	<div id="dialog13" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/13.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Poly(dimethylsiloxane) (PDMS) has become a ubiquitous material for microcontact printing, yet there are few methods available to pattern a completed PDMS stamp in a single step. It is shown here that electron beam lithography (EBL) is effective in writing patterns directly onto cured PDMS stamps, thus overcoming the need for multiple patterning steps. Not only does this method allow the modification of an existing lithographic pattern, but new 3D features such as cones, pits, and channels can also be fabricated. EBL can also be used to fabricate PDMS masks for photolithography whereby 1:1 pattern transfer into a photoresist is achieved. Additionally, direct EBL writing of surface chemical features has been achieved using a PDMS stamp coated with a self-assembled monolayer. An electrostatic mechanism appears to be operative in the EBL patterning process, as supported by calculations, thermogravimetric analysis, time-of-flight secondary ion mass spectroscopy, optical and atomic force microscopy, and chemical functionalization assays.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+M. T. Russell, L. S. C. Pingree, M. C. Hersam, and T. J. Marks, "Micro-scale features and surface chemical functionality patterned by electron beam lithography. A novel route to poly(dimethylsiloxane) (PDMS) stamp fabrication," <i>Langmuir</i> <b>22</b>, 6712 (2006).</span></div>
+	<div id="dialog14" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/14.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+A cryogenic variable-temperature ultra-high vacuum scanning tunneling microscope is used for measuring the electrical properties of isolated cyclopentene molecules adsorbed to the degenerately p-type Si(100)-2×1 surface at a temperature of 80 K. Current–voltage curves taken under these conditions show negative differential resistance at positive sample bias, in agreement with previous observations at room temperature. Because of the enhanced stability of the scanning tunneling microscope at cryogenic temperatures, repeated measurements can be routinely taken over the same molecule. Taking advantage of this improved stability, we show that current–voltage curves on isolated cyclopentene molecules are reproducible and possess negligible hysteresis for a given tip–molecule distance. On the other hand, subsequent measurements with variable tip position show that the negative differential resistance voltage increases with increasing tip–molecule distance. By using a one-dimensional capacitive equivalent circuit and a resonant tunneling model, this behavior can be quantitatively explained, thus providing insight into the electrostatic potential distribution across a semiconductor-molecule-vacuum-metal tunnel junction. This model also provides a quantitative estimate for the alignment of the highest occupied molecular orbital of cyclopentene with respect to the Fermi level of the silicon substrate, thus suggesting that this experimental approach can be used for performing chemical spectroscopy at the single-molecule level on semiconductor surfaces. Overall, these results serve as the basis for a series of design rules that can be applied to silicon-based molecular electronic devices.
+<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+N. P. Guisinger, N. L. Yoder, and M. C. Hersam, "Probing charge transport at the single molecule level on silicon by using cryogenic ultra-high vacuum scanning tunneling microscopy," <i>Proceedings of the National Academy of Sciences USA</i> <b>102</b>, 8838 (2005).</span>
+	</div>
+	<div id="dialog15" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/15.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Ultrahigh vacuum scanning tunneling microscopy is employed for the nanofabrication and characterization of atomically registered heteromolecular organosilicon nanostructures at room temperature. In the first fabrication step, feedback controlled lithography (FCL) is used to pattern individual 2,2,6,6-tetramethyl-1-piperidinyloxy (TEMPO) free radical molecules at opposite ends of the same dimer row on the Si(100)-2×1:H surface. In atomic registration with the first pattern, FCL is subsequently applied for the removal of a single hydrogen atom. The resulting dangling bond templates the spontaneous growth of a styrene chain that is oriented along the underlying dimer row. The styrene chain growth is bounded by the originally patterned TEMPO molecules, thus resulting in a heteromolecular organosilicon nanostructure. The demonstration of multistep FCL suggests that this approach can be widely used for fundamental studies and fabricating prototype devices that require atomically registered organic molecules mounted on silicon surfaces.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+R. Basu, N. P. Guisinger, M. E. Greene, and M. C. Hersam, "Room temperature nanofabrication of atomically registered heteromolecular organosilicon nanostructures using multistep feedback controlled lithography," <i>Applied Physics Letters</i> <b>85</b>, 2619 (2004).</span></div>
+	<div id="dialog16" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/16.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+The ultrahigh vacuum scanning tunnelling microscope was used to probe charge transport through two different organic monolayers adsorbed on the Si(100) substrate at room temperature. I–V measurements were taken on monolayers of 2,2,6,6-tetramethyl-1-piperidinyloxy (TEMPO) and cyclopentene for degenerately doped n-type and p-type substrates. Initial I–V measurements for transport through the TEMPO monolayer exhibited a suppression of negative differential resistance (NDR) relative to previously reported charge transport through isolated molecules. I–V measurements were also performed on isolated cyclopentene molecules and cyclopentene monolayers. Similarly to TEMPO monolayers, the cyclopentene monolayers exhibited attenuated NDR behaviour relative to isolated molecules. The observed NDR suppression suggests that the high packing density of organic monolayers influences charge transport through molecule–semiconductor junctions.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+N. P. Guisinger, R. Basu, M. E. Greene, A. S. Baluch, and M. C. Hersam, "Observed suppression of room temperature negative differential resistance in organic monolayers on Si(100)," <i>Nanotechnology</i> <b>15</b>, S452 (2004).</span>
+	</div>
+	<div id="dialog17" class="window">
+		<div style="right: 10px; top: 10px; font-size: 12px; position: absolute"><a href="#" class="close">close</a></div>
+		<img src="images/17.jpg" style="float:left; height: 400px; padding: 0px 10px"><b>Abstract:</b><br>
+Room temperature negative differential resistance (NDR) has been measured through individual organic molecules on degenerately doped Si(100) surfaces using ultrahigh vacuum scanning tunneling microscopy (STM). For styrene molecules on n-type Si(100), NDR is observed only for negative sample bias because positive sample bias leads to electron stimulated desorption. By replacing styrene with a saturated organic molecule (2,2,6,6-tetramethyl-1-piperidinyloxy), electron stimulated desorption is not observed at either bias polarity. In this case, NDR is observed only for negative sample bias on n-type Si(100) and for positive sample bias on p-type Si(100). This unique behavior is consistent with a resonant tunneling mechanism via molecular orbitals and opens new possibilities for silicon-based molecular electronic devices and chemical identification with STM at the single-molecule level.<br>
+<br>
+<span style="font-size: 14px"><b>Citation:</b>
+N. P. Guisinger, M. E. Greene, R. Basu, A. S. Baluch, and M. C. Hersam, "Room temperature negative differential resistance through individual molecules on silicon surfaces," <i>Nano Lett.</i> <b>4</b>, 55 (2004).</span>
+	</div>
+</div>
+<div id="top">
+	<div id="bannerspace">
+		<div id="banner">
+		The Hersam Research Group
+		</div>
+		<div id="nav">
+			<div id="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="hersam.html">Mark Hersam</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="members.html">Members</a></li>
+					<li><a href="alumni.html">Alumni</a></li>
+					<li style="border: 0px"><a href="sponsors.html">Sponsors</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="topcontent" style="height: 800px">
+	<div class="wrap" style="width: 920px">
+		<p class="heading headback">Research Areas</p><br><div style="text-align:center"><br>
+		<a href="#1" class="headingsmall">Scanning Probe Microscopy</a>
+		<a href="#2" class="headingsmall">Nanomaterials Processing</a>
+		<a href="#3" class="headingsmall">Nanoscale and Microscale Devices</a></div>
+		<p class="heading">&nbsp;</p>
+		<a name="1"><p class="heading headback">Scanning Probe Microscopy</p></a>
+    <div id="left"><p class="pee">We utilize a diverse array of scanning probe techniques to analyze and manipulate nanomaterials on the atomic and molecular scale. Through ultra-high vacuum scanning tunneling microscopy, we have demonstrated negative differential resistance through organic molecules, probed individual molecules on a surface, utilized tip-sample interactions to conduct nanoscale lithography, and investigated the interaction of various molecules with the graphene surface. Our lab continues to expand the boundaries of our scanning probe capabilities by utilizing various variations of atomic force microscopy, expanding our ultra-high vacuum capabilities, and applying novel techniques, such as scanning ion conductance microscopy, to important issues. </p></div>
+		<div id="right">
+			<ul>
+				<li class="jcarousel-item-21"><a name="modal" href="#dialog21"><img src="images/21.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-1"><a name="modal" href="#dialog5"><img src="images/5.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-3"><a name="modal" href="#dialog3"><img src="images/3.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-10"><a name="modal" href="#dialog11"><img src="images/11.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-10"><a name="modal" href="#dialog12"><img src="images/12.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-10"><a name="modal" href="#dialog14"><img src="images/14.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-10"><a name="modal" href="#dialog15"><img src="images/15.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-10"><a name="modal" href="#dialog16"><img src="images/16.jpg" width="100" height="133"></a></li>
+				<li class="jcarousel-item-10"><a name="modal" href="#dialog17"><img src="images/17.jpg" width="100" height="133"></a></li>
+
+			</ul>
+		</div>
+		<p class="peesmall"><strong>Additional References</strong><br><br>
+			[1] Md. Z. Hossain, J. E. Johns, K. H. Bevan, H. J. Karmel, Y. T. Liang, S. Yoshimoto, K. Mukai, T. Koitaya, J. Yoshinobu, M. Kawai, A. M. Lear, L. L.
+Kesmodel, S. L. Tait,<sup></sup>and M. C. Hersam, “Chemically homogeneous and thermally reversible oxidation of epitaxial graphene,”    <em>Nature Chemistry</em>, <strong>4</strong>, 305 (2012).<br><br>
+    [2] Q. H. Wang and M. C. Hersam, “Nanofabrication of heteromolecular organic nanostructures on epitaxial graphene via room temperature
+    feedback-controlled lithography,” <em>Nano Lett.</em>, <strong>11</strong>, 589 (2011).<br><br>
+    [3] J. M. P. Alaboson, Q. H. Wang, J. A. Kellar, J. Park, J. W. Elam, M. J. Pellin, and M. C. Hersam, “Conductive atomic force microscope nanopatterning
+    of epitaxial graphene on SiC (0001) in ambient conditions,” <em>Advanced Materials</em>, <strong>23</strong>, 2181 (2011).
+	      </p>
+		<a name="2"><p class="heading headback">Nanomaterials Processing</p></a>
+		<div id="left"><p class="pee">Our lab utilizes density gradient ultracentrifugation to sort various polydisperse nanomaterials into monodisperse solutions by a wide variety of parameters. We have previously demonstrated sorting of single-walled carbon nanotubes by electronic type, chirality, diameter, and handedness as well as sorting double-walled carbon nanotubes by their outer shell. We continue to extend our techniques to sort 2D nanomaterials, such as graphene, and are expanding our abilities to sort metallic nanoparticles by their shape and aggregation. Additionally, our lab continues to develop methods of producing nanomaterial dispersions to enable many of the applications explored by our lab. Out processing techniques have also enabled studies of nanomaterial biological toxicity and offer potential applications in drug delivery.<br><br>
+		The production of nanostructures precludes many applications of nanotechnology, and our lab has and continues to investigate various methods of manipulating and creating structures on the nanoscale. Through atomic layer deposition, electron beam lithography, focused ion beam lithography, nanosphere lithography, and conductive atomic force microscopy, we have demonstrated micrometer and nanometer scale manipulation and control over the morphology of nanostructures.</p>
+		</div>
+		<div id="right">
+			<ul>
+			<li class="jcarousel-item-4"><a name="modal" href="#dialog1"><img src="images/1.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-5"><a name="modal" href="#dialog4"><img src="images/4.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-8"><a name="modal" href="#dialog8"><img src="images/8.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-9"><a name="modal" href="#dialog9"><img src="images/9.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-10"><a name="modal" href="#dialog10"><img src="images/10.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-2"><a name="modal" href="#dialog2"><img src="images/2.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-6"><a name="modal" href="#dialog6"><img src="images/6.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-7"><a name="modal" href="#dialog7"><img src="images/7.jpg" width="100" height="133"></a></li>
+			<li class="jcarousel-item-13"><a name="modal" href="#dialog13"><img src="images/13.jpg" width="100" height="133"></a></li>
+
+			</ul>
+		</div>
+		<p class="peesmall"><strong>Additional References</strong><br><br>
+	    [1] M. S. Arnold, A. A. Green, J. F. Hulvat, S. I. Stupp, and M. C. Hersam, “Sorting carbon nanotubes by electronic structure via density
+    differentiation,” <em>Nature Nanotechnology</em>, <strong>1</strong>, 60 (2006).<br><br>
+     	[2] T. P.   Tyler, T. A. Shastry, B. J. Leever, and M. C. Hersam, “Narrow Diameter Distributions of Metallic Arc Discharge Single-Walled Carbon Nanotubes via Dual-Iteration Density Gradient Ultracentrifugation,” <em>Advanced Materials</em>, <strong>24</strong>, 4765 (2012)<br><br>
+	     [3] A. A. Green and M. C. Hersam, “Solution phase production of graphene with controlled thickness via density differentiation,” <em>Nano Letters</em>,    <strong>9</strong>, 4031 (2009).<br><br>
+    [4] T. P. Tyler, A.-I. Henry, R. P. Van Duyne, and M. C. Hersam, “Improved monodispersity of plasmonic nanoantennas via centrifugal processing,”    <em>J. Phys. Chem. Lett.</em>, <strong>2</strong>, 218 (2011).<br><br>
+        [5] T. P. Tyler, P. A. Lin, Y. Tian, H.-J. Gao, X. P. A. Gao, R. M. Sankaran, and M. C. Hersam, “Centrifugal shape sorting of faceted gold nanoparticles using an atomic plane-selective surfactant,” <em>J. Phys. Chem. Lett.</em>, <strong>3</strong>, 1484 (2012).<br><br>
+    
+    [6] Y. T. Liang and M. C. Hersam, “Highly concentrated graphene solutions via polymer enhanced solvent exfoliation and iterative solvent exchange,”    <em>J. Am. Chem. Soc.</em>, <strong>132</strong>, 17661 (2010).<br><br>
+    </p>
+
+
+    <a name="3"><p class="heading headback">Nanoscale and Microscale Devices</p></a>
+    <div id="left"><p class="pee">The ever-changing energy needs of our society necessitate the exploration of novel methods of energy collection and storage. Towards this goal, we utilize our expertise in processing nanomaterials to explore applications of carbon nanotubes and graphene in photocatalysis and organic photovoltaics. Our use of spectroscopic techniques provides deep insight into energy collection and storage systems, such as conductive atomic force microscopy on organic photovoltaics and scanning conductive ion microscopy for lithium ion batteries. Such techniques lead to better understanding of the key issues in enabling practical applications of these technologies.<br><br>Our device work also extends to pushing the limits of nanoscale devices through a combination of scanning probe techniques and nanomaterials processing. By uniting high-purity carbon nanomaterials, high-k organic dielectric layers, and robust fabrication techniques, we have demonstrated high performance, flexible, thin-film transistors that approach fundamental limits, and atomic level studies of molecular monolayers on graphene have enabled the development of high-performance capacitors.</p></div>
+		<div id="right">
+			<ul>
+				<li class="jcarousel-item-19"><a name="modal" href="#dialog20"><img src="images/20.gif" width="100" height="133"></a></li>
+				<li class="jcarousel-item-19"><a name="modal" href="#dialog19"><img src="images/19.gif" width="100" height="133"></a></li>
+				<li class="jcarousel-item-18"><a name="modal" href="#dialog18"><img src="images/18.gif" width="100" height="133"></a></li>			</ul>
+		</div>
+		<p class="peesmall"><strong>Additional References</strong><br><br>
+		[1] Y. T. Liang, B. Vijayan, K. A. Gray, and M. C. Hersam, “Minimizing graphene defects enhances titania nanocomposite-based photocatalytic reduction of
+    CO<sub>2</sub> for improved solar fuel production,” <em>Nano Lett.</em>, <strong>11</strong>, 2865 (2011).<br><br>
+    [2] I. P. Murray, S. J. Lou, L. J. Cote, S. Loser, C. J. Kadleck, T. Xu, J. M. Szarko, B. S. Rolczynski, J. E. Johns, J. Huang, L. Yu, L. X. Chen, T. J.
+    Marks, and M. C. Hersam, “Graphene oxide interlayers for robust, high-efficiency organic photovoltaics,” <em>J. Phys. Chem. Lett.</em>, <strong>2</strong>,
+    3006 (2011).<br><br>
+    [3] B. J. Leever, C. A. Bailey, T. J. Marks, M. C. Hersam, and M. F. Durstock, “In situ characterization of lifetime and morphology in operating bulk
+    heterojunction organic photovoltaic devices by impedance spectroscopy,” <em>Advanced Energy Materials</em>, <strong>2</strong>, 120 (2012).<br><br>
+     [4] S. Chattopadhyay, A. L. Lipson, H. J. Karmel, J. D. Emery, T. T. Fister, P. A. Fenter, M. C. Hersam, and M. J. Bedzyk, “In situ X-ray study of the solid electrolyte interphase (SEI) formation on graphene as a model Li-ion battery anode,” <em>Chemistry of Materials</em>, <strong>24</strong>, 3038 (2012).<br><br>
+     [5] V. K. Sangwan, R. P. Ortiz, J. M. P. Alaboson, J. D. Emery, M. J. Bedzyk, L. J. Lauhon, T. J. Marks, and M. C. Hersam, “Fundamental performance limits of carbon nanotube thin-film transistors achieved using hybrid molecular dielectrics,” <em>ACS Nano</em>, <strong>6</strong>, 7480 (2012).<br><br>
+     [6] J. M. P. Alaboson, Q. H. Wang, J. D. Emery, A. L. Lipson, M. J. Bedzyk, J. W. Elam, M. J. Pellin, and M. C. Hersam, “Seeding atomic layer deposition
+    of high-k dielectrics on epitaxial graphene with organic self-assembled monolayers,” <em>ACS Nano</em>, <strong>5</strong>, 5223 (2011).
+
+
+    
+
+	      </p>
+	      	      		<p class="heading">&nbsp;</p>
+
+	          
+	</div>
+	<div id="content" style="height: 75px">
+		<div class="wrap">
+		</div>
+	</div>
+</div>
+<div id="mask"></div>
+</body>
+</html>
