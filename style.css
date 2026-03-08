@@ -74,7 +74,7 @@ body {
 	margin:0;
 	padding:0;}
 #submenu li {
-	float:left;}
+	display: block;}
 #submenu a {
 	background: url(images/submenudevider.png) no-repeat left;
 	display: block;
@@ -311,3 +311,4 @@ a:hover {
 #wrap #main #content #headercontent table tr th p strong a .column3 {
 	font-weight: bold;
 }
+
