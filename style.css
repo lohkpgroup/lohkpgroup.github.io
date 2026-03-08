@@ -69,21 +69,28 @@ body {
 		width:936px;
 		margin:0 auto 10px auto;
 		height:88px;}
+
+#submenu {
+    background: #d9d9d9;
+    padding: 8px 0;}
 #submenu ul {
 	list-style: none;
 	margin:0;
 	padding:0;}
 #submenu li {
 	float:left;}
-#submenu a {
+#submenu a,
+#submenu a:visited,
+#submenu a:active {
 	background: url(images/submenudevider.png) no-repeat left;
 	display: block;
-	padding-top: 2px;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 2px 15px;
 	color: #666666;
-	text-decoration: none;
-}
+	text-decoration: none;}
+#submenu a:hover {
+    color: #000000;}
+
+
 #mainmenu {
 	height: 55px;
 	font: bold 14px "Trebuchet MS", halvetica, Verdana, sans-serif;
@@ -174,29 +181,7 @@ a:hover {
 	text-align: center;
 }
 #mainmenu ul {list-style:none;}
-#submenu a:visited, #submenu a:active {
-	background: url(images/submenudevider.png) no-repeat left;
-	display: block;
-	float: left;
-	height: 16px;
-	padding-top: 2px;
-	padding-right: 15px;
-	padding-left: 15px;
-	color: #666666;
-	text-decoration: none;
-}
-#submenu a:hover {
 
-	background: url(images/submenudevider.png) no-repeat left;
-	display: block;
-	float: left;
-	height: 16px;
-	padding-top: 2px;
-	padding-right: 15px;
-	padding-left: 15px;
-	color: #000000;
-	text-decoration: none;
-}
 #mainmenu .first a:visited, #mainmenu .first a:active {
 
 	background: none;
@@ -311,4 +296,5 @@ a:hover {
 #wrap #main #content #headercontent table tr th p strong a .column3 {
 	font-weight: bold;
 }
+
 
