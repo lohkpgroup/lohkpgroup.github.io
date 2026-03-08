@@ -68,7 +68,8 @@ body {
 	list-style: none;
 }
 #submenu li {
-	float:left;}
+	display: inline;
+}
 #submenu a {
 	background: url(images/submenudevider.png) no-repeat left;
 	display: block;
@@ -307,3 +308,4 @@ a:hover {
 #wrap #main #content #headercontent table tr th p strong a .column3 {
 	font-weight: bold;
 }
+
