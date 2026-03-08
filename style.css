@@ -63,18 +63,21 @@ body {
 	height: 125px;
 }
 
-#main {background:url(images/pagebg.png) repeat-y; padding:2px 9px 0 9px; margin:0;}
-#menus {background:url(images/menu.jpg) no-repeat; width:936px; margin:0 auto 10px auto; height:88px;}#submenu ul {
+#main {
+	background:url(images/pagebg.png) repeat-y; padding:2px 9px 0 9px; margin:0;}
+#menus {background:url(images/menu.jpg) no-repeat;
+		width:936px;
+		margin:0 auto 10px auto;
+		height:88px;}
+#submenu ul {
 	list-style: none;
-}
+	margin:0;
+	padding:0;}
 #submenu li {
-	display: inline;
-}
+	float:left;}
 #submenu a {
 	background: url(images/submenudevider.png) no-repeat left;
 	display: block;
-	float: left;
-	height: 16px;
 	padding-top: 2px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -308,3 +311,4 @@ a:hover {
 #wrap #main #content #headercontent table tr th p strong a .column3 {
 	font-weight: bold;
 }
+
